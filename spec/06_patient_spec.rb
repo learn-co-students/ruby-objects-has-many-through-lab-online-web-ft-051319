@@ -11,6 +11,7 @@ describe 'Patient' do
     it 'given a doctor and date, creates a new appointment belonging to that patient' do
       doctor_who = Doctor.new('The Doctor')
       hevydevy = Patient.new('Devin Townsend')
+      # binding.pry
       appointment = hevydevy.new_appointment(doctor_who, 'Friday, January 32nd')
 
       expect(hevydevy.appointments).to include(appointment)
